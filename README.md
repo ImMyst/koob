@@ -1,2 +1,2 @@
 # Koob
-> Koob is a simple Adonis/Inertia project to experience these technologies.
+> Koob is a simple Adonis/Inertia book collection app to experience these technologies.
