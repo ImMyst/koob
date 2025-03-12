@@ -1,4 +1,4 @@
-import { Head } from '@inertiajs/react'
+import { Head } from "@inertiajs/react";
 
 export default function Home() {
   return (
@@ -7,5 +7,5 @@ export default function Home() {
 
       <h1 className="text-2xl bg-amber-600">Kook</h1>
     </>
-  )
+  );
 }
