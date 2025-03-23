@@ -7,5 +7,18 @@
 |
 */
 
+const RegisterController = () =>
+  import("#auth/controllers/register_controller");
+import { middleware } from "#start/kernel";
 import router from "@adonisjs/core/services/router";
-router.on("/").renderInertia("home");
+
+router.get("/", async ({ auth, inertia }) => {
+  await auth.check();
+
+  return inertia.render("home");
+});
+
+router.group(() => {
+  router.get("/register", [RegisterController, "render"]);
+  router.post("/register", [RegisterController, "execute"]);
+});
