@@ -15,6 +15,8 @@
   },
   "imports": {
     "#auth/*": "./app/auth/*.js",
+    "#author/*": "./app/author/*.js",
+    "#book/*": "./app/book/*.js",
     "#core/*": "./app/core/*.js",
     "#providers/*": "./providers/*.js",
     "#database/*": "./database/*.js",
